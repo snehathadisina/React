@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+135deg,
+orange 5%,
+rgb(231, 97, 119) 35%,
+rgb(183, 0, 255) 100%
+);
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.card{
+  width: 260px;
+  height: 360px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 20px;
+}
+.card h1{
+  position: relative;
+  color: white; 
+  font-size: 60px;
+  margin-bottom: 65px;
+}
+.card p{
+  color: black;
+  font-size: 13px;
+  line-height: 1.4;
+  text-align: center;
+  margin-bottom: 18px;
+  padding: 0 8px;
+  font-weight: 500;
+} 
+
+.card::before{
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 280px;
+  border-radius: 50%;
+  top: -140px;
+  left: -10%;
+}
+.card:nth-child(1)::before{
+  background-color: orange;
+}
+.card:nth-child(2)::before{
+  background-color:rgb(233, 34, 67);
+}
+.card:nth-child(3)::before{
+  background-color: rgb(183, 0, 255);
+}
+
+
+
+.btn{
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: white;
+  font-size: 15px;
+}
+.card:nth-child(1) .btn{
+  background-color: orange;
+}
+.card:nth-child(2) .btn{
+  background-color: rgb(233, 34, 67);
+}
+.card:nth-child(3) .btn{
+  background-color: rgb(183, 0, 255);
+}
