@@ -36,15 +36,6 @@ rgb(183, 0, 255) 100%
   overflow: hidden;
   text-align: center;
   padding: 20px;
-}
-.card h1{
-  position: relative;
-  color: white; 
-  font-size: 60px;
-  margin-bottom: 65px;
-}
-.card p{
-  color: black;
   font-size: 13px;
   line-height: 1.4;
   text-align: center;
